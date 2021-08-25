@@ -1,0 +1,189 @@
+@use '../base/settings' as *;
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+body{
+  font: 18px $bodyFont;
+  overflow-x: hidden;
+}
+
+.container{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40px;
+}
+
+ul{
+  list-style: none;
+}
+
+.menu-bar{
+  position: sticky;
+  padding-left:20px;
+  z-index: 20;
+  overflow-x:hidden;
+  color: #685454;
+  top:8rem;
+  display: flex;
+  justify-content: center;
+  
+  
+  .menu-body{
+    list-style:none; 
+    display: flex;
+    justify-content: center;
+
+
+    a{
+      text-decoration: none;
+      
+      text-align:left;
+      outline: 0;
+      color: #685454;
+      display: inline-block;
+      padding: 12px;
+     
+    }
+  }
+}
+
+
+      /* navigation */
+      .menu-wrapper {
+          display: none;
+      }
+      .menu-bar {
+        position:absolute;
+        top: 25px;
+      }
+
+      .menu-bar.right {
+        transform: none;
+      }
+
+      .menu-heading{
+        display: none;
+      }
+
+      .top-menu{
+        z-index: 20;
+        
+      }
+      .container{
+        position: absolute;
+        display:flex;
+        justify-content:center;
+        top: 90px;
+      }
+
+      .menu-bar .menu-body a {
+        background: none;   
+
+      }
+
+      .menu-bar.right {
+        box-shadow: none;
+        top: 25px;
+        display: flex;
+        justify-content: left;
+        
+      }
+      
+      .menu-body{
+       ul {
+          display: flex;
+          flex: row;
+  
+      }
+
+      .hamburger-menu {
+       display:none;
+        &.animate {
+          display:none;
+        }
+      }
+    }
+    
+
+@media screen and (min-width: 700px) {
+  .menu-bar.right {
+        width:40%;
+       
+    }
+
+  .menu-bar {
+    width:40%;
+  }
+
+  }
+
+
+/* CSS Hover Effect*/
+
+
+/* Media query */
+
+
+
+.menu li {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  transition: color .2s ease;
+  padding: 3px 0;
+  margin-bottom: 15px;
+  
+  &:hover {
+    color: #aaa;
+     
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+    
+  }
+  
+  &::after,
+  &::before {
+    content: ''; 
+    position: absolute;
+    top: calc(100%);
+    width: 0;
+    height: 2px;
+  }
+  
+  &::before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    background: #EA8A8A;
+  }
+  
+  // &::after {
+  //   transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  //   background: #EBD5D5 ;
+  // }
+}
+
+@media(min-width:500px){
+  .menu li{
+    font-size:20px;
+  }
+}
+
+.menu-body{
+  visibility:hidden;
+}
+
+@media(min-width:600px){
+  .menu-body{
+    visibility:visible;
+  }
+}
+
+ .logo-class{
+   position:relative;
+   left:0;
+ }
+

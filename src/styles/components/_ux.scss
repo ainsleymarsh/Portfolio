@@ -1,0 +1,100 @@
+.video3{
+    padding-top:50px;
+    padding-bottom:50px;
+    max-width:100vw;
+    height:auto;
+}
+
+.alice-carousel__stage-item{
+    width: 1920px;
+  
+}
+
+.ux-user-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.ux-img{
+    max-width:900px;
+    width:100%;
+
+}
+.ux-pic{
+    max-width:900px;
+    width:100%;
+}
+
+.chart-center{
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.paragraph-center{
+    padding-left: 40px;
+}
+
+.paragraph-top{
+    margin-bottom: 50px;
+    padding-left:20px;
+    font-size: 25px;
+}
+
+.list-container{
+    display:flex;
+    justify-content:center;
+}
+.graph-center{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.task-center{
+  
+    padding: 20px;
+    margin-right:10px;
+  
+}
+
+.font-size{
+    text-decoration:underline;
+    text-decoration-color:#dcc9be;
+
+}
+
+.project{
+    text-decoration:underline;
+    text-decoration-color:#d7f3f6;
+}
+
+.user{
+    text-decoration:underline;
+    text-decoration-color:#ffffff;
+}
+
+.padding-top{
+    margin-top:80px;
+}
+
+.padding-bottom{
+    padding-bottom:80px;
+}
+
+@media (min-width: 800px){
+
+.task-container{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.task-center{
+    width:40%;
+    flex-wrap:wrap;
+
+}
+}

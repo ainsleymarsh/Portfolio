@@ -1,0 +1,171 @@
+
+@use '../base/settings' as *;
+@use '../base/mixins' as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
+.contact-container{
+    
+    font-family:$bodyFont;
+    padding-left:10px;
+    padding-top:20px;
+    font-size:1.3rem;
+    border: 2px solid #d3d3d3;
+    width:400px;
+    padding-top:70px;
+    margin-bottom:100px;
+    
+}
+.form-group{
+    margin-bottom:40px;
+}
+
+.home-section-contact{
+    background-color:white;
+}
+
+
+.contact-description h1{
+    position:relative;
+    right:0;
+    left:0;
+    text-align:center;
+    padding-top: 40px;
+    color:#565656;
+    font-size:40px;
+    padding-bottom: 30px;
+}
+.flex-container{
+    display:flex; 
+    margin-top:100px;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.flex-container p{
+    padding-bottom:40px;
+    justify-content:space-between;
+    font-family: $bodyFont;
+}
+
+.btn{
+    background-color:#f7f7f7;
+    color:#685454;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:1.5rem;
+    margin-top:5px;
+    margin-bottom:20px;
+
+}
+
+.btn:hover{
+ background-color:#EBD5D5;
+}
+
+.email-contact{
+    color: #685454;
+    text-decoration:none;
+}
+
+#message{
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:150px;
+    font-family:$contactFont;
+    background-color: #F5F5F5;
+    font-size:1.3rem;
+    align-items:center;
+    width:95%;
+}
+
+#name{
+    @include contact-styling;
+  
+}
+
+#email{
+   @include contact-styling;
+  
+}
+
+.contact-description p{
+    position:relative;
+    right:0;
+    left:0;
+    line-height:50px;
+    font-size: 20px;
+    text-align:center; 
+    padding-right: 40px;
+    padding-left: 40px;  
+}
+
+.github-icon{
+    margin-top:40px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+
+.display-flex-contact{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+}
+
+@media(min-width:600px){
+    .display-flex-contact{
+        display:none;
+    }
+}
+@media (min-width: 900px){
+
+    .github-contact{
+        margin-bottom:120px;
+    }
+
+    .contact-description{
+        top:80px;
+        position:relative;
+    }
+    .form-contact h2{
+        font-size:3.6rem;
+        padding-bottom:200px;
+    }
+    
+    .contact-description p{
+        padding-right:80px;
+        padding-left:80px;
+        width:700px;
+    }
+    .contact-container{
+        width:550px;
+        height:800px;
+    }
+    
+    }
+
+    .copyright{
+       visibility:hidden
+    }
+
+    @media(min-width:600px){
+        .copyright{
+            visibility:visible;
+        }
+    }
+
+
+
+
+
+
+
+
+

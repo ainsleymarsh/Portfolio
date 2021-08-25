@@ -1,0 +1,170 @@
+@use '../base/mixins' as *;
+@use '../base/settings' as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,*:before, *:after {
+	margin:0;
+	
+	padding: 0;
+}
+.skillset{
+   
+   background-color: #F2F2F2;
+   
+
+    .skills{
+
+        color:#685454;
+        text-align:center;
+        font-family:$bodyFont;
+        text-decoration:underline;
+        text-decoration-color:#EBD5D5;
+        font-size:2rem;
+         
+    } 
+  
+    @media (min-width: 800px){
+        .skills{
+            font-size:40px;
+        }
+        
+        }
+}
+
+
+.language{
+    position:relative;
+    right:0;
+    left:0;
+    text-align:center;
+
+}
+
+
+.box-wrapper{
+
+    display:flex;
+    flex:row;
+    flex-wrap:wrap;
+    justify-content:center;
+   
+        .box-1 {
+        
+           @include skills-transition;
+
+        }
+        .box-2{ 
+            @include skills-transition;
+        }
+        .box-3{ 
+            @include skills-transition;
+        }
+        .box-4{ 
+            @include skills-transition;
+        }
+        .box-5{ 
+            @include skills-transition;
+        }
+        .box-6{ 
+            @include skills-transition;
+        }
+       
+        .box-9{ 
+            @include skills-transition;
+        } 
+
+        .box1 {
+        
+            @include skills-transition2;
+ 
+         }
+         .box2{ 
+             @include skills-transition2;
+         }
+         .box3{ 
+             @include skills-transition2;
+         }
+         .box4{ 
+             @include skills-transition2;
+         }
+         .box5{ 
+             @include skills-transition2;
+         }
+         .box6{ 
+             @include skills-transition2;
+         }
+        
+         .box9{ 
+             @include skills-transition2;
+         } 
+      
+    }
+
+
+  
+.box-1:hover
+{
+        
+        
+        color: #EA8A8A;
+       
+}
+
+
+
+.box-2:hover
+{
+       
+        color: #EA8A8A;
+}
+
+
+.box-3:hover
+{
+        
+        color: #EA8A8A;
+}
+
+.box-4:hover
+{
+        color: #EA8A8A;
+}
+
+.box-5:hover
+{
+        
+        color: #EA8A8A;
+}
+
+.box-6:hover
+{
+       
+        color: #EA8A8A;
+}
+
+.box-9:hover
+{
+        color: #EA8A8A;
+}
+
+.js-hover{
+    padding-top:20px;
+}
+
+@media(min-width: 900px){
+    .box-1{
+       max-width:300px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+

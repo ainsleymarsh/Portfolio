@@ -1,0 +1,197 @@
+
+@use '../base/settings' as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+
+*,*:before, *:after {
+	margin:0;
+	
+	padding: 0;
+}
+    .paragraph-description{
+    position:absolute;
+    font-family: $bodyFont;
+    top:150px;
+    line-height:3rem;
+    left:20px;
+    color:#685454;
+    }
+
+    .name{
+        font-size: 1.5rem;
+        left: 10px;
+        
+    }
+    
+    .skills{
+        font-size: 1.2rem;
+        
+    }
+    
+    .job{
+        font-size: 1rem;
+       
+    }
+
+
+@media (min-width: 400px){
+
+    .paragraph-description{
+    position: absolute;
+    top:200px;
+    left: 8%;
+    
+    }
+
+    .name{
+        font-size: 2rem;
+        left: 10px;
+        
+    }
+    
+    .skills{
+        font-size: 1.3rem;
+        
+    }
+    
+    .job{
+        font-size: 1.2rem;
+       
+    }
+
+}
+
+@media (min-width: 600px){
+
+    .paragraph-description{
+    position: absolute;
+    top:200px;
+    left: 5%;
+    
+    }
+
+    .name{
+        font-size: 1.5rem;
+        left: 10px;
+        
+    }
+    
+    .skills{
+        font-size: 1.2rem;
+        
+    }
+    
+    .job{
+        font-size: 1rem;
+       
+    }
+
+
+
+}
+
+@media (min-width: 800px){
+
+    .paragraph-description{
+    position: absolute;
+    top:200px;
+    left: 5%;
+    
+    }
+
+
+
+}
+
+@media(min-width:1000px){
+
+    .paragraph-description{
+        position: absolute;
+        line-height:5rem;
+        top: 220px;
+        left: 10%;
+       
+     }
+    .name{
+        font-size: 40px;
+        
+    }
+    
+    .skills{
+        font-size: 30px;
+        
+    }
+    
+    .job{
+        font-size: 20px;
+        
+    }
+
+}
+
+@media (min-width: 1500px){
+
+    .paragraph-description{
+        font-size:1.5rem;
+    }
+    .paragraph-description{
+        position: absolute;
+        top: 250px;
+        left: 10%;
+      
+        }
+
+
+}
+
+@media (min-width: 1800px){
+
+    .paragraph-description{
+        font-size:1.5rem;
+    }
+    .paragraph-description{
+        position: absolute;
+        top: 400px;
+        left: 10%;
+      
+        }
+        .name{
+            font-size: 60px;
+            
+        }
+        
+        .skills{
+            font-size: 50px;
+            
+        }
+        
+        .job{
+            font-size: 30px;
+            
+        }
+
+
+}
+
+
+.paragraph-description h1 {
+    overflow: hidden; 
+   // border-right: .05em solid #D3D3D3; 
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3s steps(50, end),
+      blink-caret 1s step-end infinite;
+ }
+
+ @keyframes typing {
+    from { width: 0 }
+     to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+   // 50% { border-color: #D3D3D3 }
+  }
+

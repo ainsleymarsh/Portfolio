@@ -1,0 +1,35 @@
+footer {
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #EA8A8A;
+  color: #f5f5f5;
+}
+
+@media (min-width: 600px) {
+  footer {
+    position: relative;
+    height: 30px;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+.center-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon {
+  margin-bottom: 9px;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+}

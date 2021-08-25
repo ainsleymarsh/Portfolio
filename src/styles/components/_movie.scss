@@ -1,0 +1,262 @@
+@use '../base/settings' as *;
+@use '../base/mixins' as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.movie-img {
+  position: relative;
+  width: 100%;
+  top: 50px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.movie-mobie-pic {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.movie-margin-top {
+  margin-top: 100px;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+}
+
+.alice-carousel__dots {
+  margin: 0;
+}
+
+.movie-overview p {
+  padding: 10px;
+  color: #635e5e;
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  .movie-overview p {
+    font-size: 20px;
+  }
+}
+
+.movie-box {
+  text-align: center;
+  color: #031d44;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 2px;
+}
+
+.movie-box-2 {
+  width: 500px;
+  height: 600px;
+  background-color: #a7cfe8;
+  text-align: center;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.movie-button {
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: left;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+.movie-button:hover {
+  background-color: #ebd5d5;
+}
+
+.p-container {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-pic {
+  max-width: 600px;
+  padding-top: 300px;
+}
+
+.task-container {
+  background-color: #ebd5d5;
+}
+
+.video1-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.video2-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabs {
+  position: relative;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.video1 {
+  @include video-size;
+}
+
+.video2 {
+  @include video-size;
+}
+
+.images {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-container-capstone {
+  background-color: #f2f2f2;
+}
+
+.paragraph-container {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  .paragraph-wrap p {
+    line-height: 2rem;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .video1-container {
+    flex-direction: row;
+  }
+
+  .video2-container {
+    flex-direction: row;
+  }
+
+  .paragraph-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video2 {
+    order: 2;
+  }
+
+  .video1 {
+    max-width: 550px;
+    height: auto;
+  }
+
+  .video2 {
+    max-width: 550px;
+    height: auto;
+  }
+}
+
+.mobile-container {
+  @include movie-paragraph;
+}
+
+.desktop-container {
+  @include movie-paragraph;
+}
+
+.sorting-container {
+  @include movie-paragraph;
+}
+
+.single-container {
+  @include movie-paragraph;
+}
+
+.navigation-container {
+  @include movie-paragraph;
+}
+
+.favourites-container {
+  @include movie-paragraph;
+}
+
+@media (min-width: 800px) {
+  .favourites-container {
+    @include desktop-container-movie;
+  }
+
+  .mobile-container {
+    @include top-container-movie;
+  }
+
+  .desktop-container {
+    @include desktop-container-movie;
+  }
+
+  .sorting-container {
+    @include top-container-movie;
+  }
+
+  .single-container {
+    @include desktop-container-movie;
+  }
+
+  .navigation-container {
+    @include desktop-container-movie;
+  }
+
+  .favourites-container {
+    @include desktop-container-movie;
+  }
+}
+
+@media (min-width: 800px) {
+  .process-description {
+    width: 60%;
+    text-align: left;
+  }
+}
+
+.p-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container-movie {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
+@media (min-width: 1500px) {
+  .image-container-movie {
+    min-height: 100vh;
+  }
+}
+
+.bg-color {
+  background-color: #ebd5d5;
+}

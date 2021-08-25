@@ -1,0 +1,27 @@
+
+@use'./base/settings';
+@use './base/mixins';
+
+
+//Components
+@use './components/headerimage';
+@use './components/home';
+@use './components/body';
+@use'./components/contact';
+@use'./components/footer';
+@use'./components/box';
+@use'./components/projects';
+@use'./components/main-nav';
+@use'./components/about';
+@use'./components/movie';
+@use'./components/contactnum';
+@use'./components/progress';
+@use'./components/ux';
+@use'./components/capstone';
+@use'./components/font';
+
+//Google Font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");

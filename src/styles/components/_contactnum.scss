@@ -1,0 +1,78 @@
+.email-link{
+    position:relative;
+    right:0;
+    left:0;
+    text-align:center;
+   
+}
+
+.github-link-bottom{
+    display:flex;
+    justify-content:center;
+}
+
+.email{
+    color:#685454;
+    text-decoration:none;
+}
+
+.github-link{
+    position:absolute;
+    bottom:60px; 
+}
+
+.social-media-bottom{
+    background-color:rgba(235,213,213,0.2);
+}
+
+.github-link{
+    display:none;
+}
+
+
+.github{
+   
+    color:#685454;
+    margin-bottom:5px; 
+    margin-right:5px;
+}
+
+.linkedin{
+   
+    color:#685454;
+}
+
+.github:hover
+{
+              
+        color: #EA8A8A;
+       
+}
+
+.linkedin:hover
+{
+       
+        color: #EA8A8A;
+}
+
+.email-contact{
+    position:relative;
+    right:0;
+    left:0;
+    text-align:center;
+}
+
+.github-contact{
+    display:flex;
+    justify-content:center;
+}
+
+@media(min-width:1000px){
+    .github-contact{
+        display:flex;
+        justify-content:center;
+        padding-top:15px;
+        margin-bottom: 100px;
+       
+    }
+}

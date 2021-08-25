@@ -1,0 +1,130 @@
+@use '../base/settings' as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.wrapper {
+  overflow: hidden;
+  display:block;
+}
+
+.header-wrapper {
+  background-color: #F2F2F2;
+  position: relative;
+  overflow: hidden;
+}
+body {
+  background-color: #F2F2F2;
+  overflow-x: hidden;
+}
+
+.cf {
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-family: $bodyFont;
+  line-height: 2;
+  margin-bottom: 20px;
+  color: #685454;
+  font-size:18px;
+  padding-bottom:40px;
+}
+
+.welcome {
+  
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #EBD5D5;
+  color: #685454;
+}
+
+.react-tabs__tab--selected{
+  color:#f2f2f2;
+  background:#EA8A8A;
+}
+
+.alice-carousel__dots-item:not(.__custom){
+  background-color:#685454;
+}
+.alice-carousel__dots-item:not(.__custom).__active{
+  background-color:#EA8A8A
+}
+
+.alice-carousel__prev-btn-item{
+  color:#EA8A8A
+}
+
+.alice-carousel__next-btn-item{
+  color:#EA8A8A
+}
+
+.alice-carousel__prev-btn-item:hover{
+  color: #685454;
+}
+
+.alice-carousel__next-btn-item:hover{
+  color: #685454;
+}
+
+.padding{
+   margin-top:20px;
+}
+
+@media (min-width: 800px) {
+  .welcome {
+    font-size: 40px;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top:20px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+
+  padding: 0;
+}
+
+
+.about-paragraph .about-text {
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.padding-bottom{
+  margin-bottom:40px;
+}
+
+.wrap{
+  width:80%;
+ 
+}
+
+
+.padding-bottom-less{
+  margin-bottom:20px;
+}
+.space-between{
+  padding-top:20px;
+}
+
+.space-bottom{
+  padding-bottom:120px;
+}
+
+@media(min-width:600px){
+  .space-bottom{
+    padding-bottom:40px;
+  }
+}
